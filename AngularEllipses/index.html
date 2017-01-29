@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+
+    <script src="scripts/jquery-1.10.2.min.js" type="application/javascript"></script>
+    <script src="scripts/angular.min.js" type="application/javascript"></script>
+    <script src="scripts/angular-route.min.js" type="application/javascript"></script>
+    <script src="scripts/angular-resource.min.js" type="application/javascript"></script>
+    <script src="MultibrowserEllipses/rgModule.js" type="application/javascript"></script>
+
+    <script src="App/app.js" type="application/javascript"></script>
+
+</head>
+<body data-ng-app="ellipsesModule">
+
+    <div data-ng-controller="mainController">
+        <h3 style="margin-left: 150px;" class="text-success">Multi Browser support for Ellipses including Dynamic Element</h3>
+         <div class="row">
+             <div class="col-lg-1"></div>
+             <div class="col-lg-4">
+                 <div class="panel panel-primary">
+                     <div class="panel-heading">
+                         <h3 class="panel-title">MultiLine Ellipses for Div tag with 2 lines</h3>
+                     </div>
+                     <div class="panel-body">
+                         <div class="well text-danger" rg-clamp="3">
+                            The human species' use of technology began with the conversion of natural resources into simple tools. The prehistoric discovery of how to control fire increased the available sources of food and the invention of the wheel helped humans in travelling in and controlling their environment.
+                         </div>
+                     </div>
+                 </div>
+             </div>
+             <div class="col-lg-4">
+                 <div class="panel panel-success">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Multiline Ellipses for P tag with 3 lines</h3>
+                    </div>
+                     <div class="panel-body">
+                        <div>
+                            <p class="well text-info" rg-clamp="4" style="">
+                                Technology is the collection of tools, including machinery, modifications, arrangements and procedures used by humans. Engineering is the discipline that seeks to study and design new technologies. Technologies significantly affect human as well as other animal species' ability to control and adapt to their natural environments. The term can either be applied generally or to specific areas: examples include construction technology, medical technology and information technology
+                            </p>
+                        </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+
+        <div class="row">
+            <div class="col-lg-1">
+
+            </div>
+            <div class="col-lg-2">
+                <button ng-click="addElement()" class="btn btn-success btn-md">Add Dynamic Element</button>
+            </div>
+            <div class="col-lg-4">
+                <div class="panel panel-success">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Multiline Ellipses with multi browser support for dynamic element</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div id="dynamicele" >
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
